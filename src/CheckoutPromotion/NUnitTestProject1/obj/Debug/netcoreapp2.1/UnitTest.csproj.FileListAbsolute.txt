@@ -1,0 +1,15 @@
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\nunit.engine.netstandard.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\Mono.Cecil.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\UnitTest.deps.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\UnitTest.runtimeconfig.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\UnitTest.runtimeconfig.dev.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\UnitTest.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\UnitTest.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.csprojAssemblyReference.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.csproj.CoreCompileInputs.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfoInputs.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfo.cs
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.pdb

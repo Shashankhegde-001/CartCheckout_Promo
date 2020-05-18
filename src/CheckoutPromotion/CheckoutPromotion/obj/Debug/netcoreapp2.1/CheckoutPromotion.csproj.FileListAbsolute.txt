@@ -1,0 +1,11 @@
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\bin\Debug\netcoreapp2.1\CheckoutPromotion.deps.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\bin\Debug\netcoreapp2.1\CheckoutPromotion.runtimeconfig.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\bin\Debug\netcoreapp2.1\CheckoutPromotion.runtimeconfig.dev.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\bin\Debug\netcoreapp2.1\CheckoutPromotion.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.csprojAssemblyReference.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.csproj.CoreCompileInputs.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.AssemblyInfoInputs.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.AssemblyInfo.cs
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\bin\Debug\netcoreapp2.1\CheckoutPromotion.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.pdb
