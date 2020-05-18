@@ -16,7 +16,8 @@ namespace CheckoutPromotion
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-           // builder.Services.AddScoped<IShiftProcessor, ShiftProcessor>();
+            builder.Services.AddScoped<ICart, Cart>();
+            builder.Services.AddScoped<IPromotion, Promotions>();
         }
     }
 
