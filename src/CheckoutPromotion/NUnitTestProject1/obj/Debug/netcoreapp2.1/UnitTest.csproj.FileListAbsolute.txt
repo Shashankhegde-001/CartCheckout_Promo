@@ -13,3 +13,6 @@ C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NU
 C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.AssemblyInfo.cs
 C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.dll
 C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\CheckoutPromotion.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\bin\Debug\netcoreapp2.1\CheckoutPromotion.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\NUnitTestProject1\obj\Debug\netcoreapp2.1\UnitTest.csproj.CopyComplete

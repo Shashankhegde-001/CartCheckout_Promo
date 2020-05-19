@@ -6,9 +6,10 @@ namespace CheckoutPromotion
 {
     public interface IPromotion
     {
-        double AddPromotion(string productName, int quantity, double discount);
-        double UpdatePromotion(string productName, int quantity, double discount);
-        void CheckPromotionAvailability(List<Product> catalogItems);
-        void ApplyPromotion();
+        void AddPromotion(string productName, int quantity, double discount);
+        void UpdatePromotion(string productName, int quantity, double discount);
+        double ApplyPromotion(IDictionary<Product, int> catalogItems,List<Promo> promotionList, Dictionary<string, Product> products);
+        List<Promo> GetActivePromotions();
+        void AddPromotionCombo(List<string> productCombination,int quantity, double discount);
     }
 }
