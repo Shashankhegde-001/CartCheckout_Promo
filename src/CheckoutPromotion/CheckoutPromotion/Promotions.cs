@@ -73,13 +73,13 @@ namespace CheckoutPromotion
 
                     if(isComboPresent)
                     {
-                        foreach(KeyValuePair<string,Product> product in productsList)
-                        {
-                            if( promotion.ProductCombination.Contains(product.Key))
-                            {
-                              //finalOrderValue -= product.Value.Price;
-                            }
-                        }
+                        //foreach(KeyValuePair<string,Product> product in productsList)
+                        //{
+                        //    if( promotion.ProductCombination.Contains(product.Key))
+                        //    {
+                        //      //finalOrderValue -= product.Value.Price;
+                        //    }
+                        //}
                         finalOrderValue += promotion.DiscountPrice* promotion.Quantity;
                         return finalOrderValue;
                     }
