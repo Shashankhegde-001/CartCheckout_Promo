@@ -8,7 +8,6 @@
   <ItemGroup>
     <PackageReference Include="Autofac" Version="5.2.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="6.0.0" />
-    <PackageReference Include="Cquential.Microsoft.Practices.Unity" Version="2.0.414" />
     <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
     <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.4" />
@@ -16,7 +15,6 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.4" />
     <PackageReference Include="NuGet.DependencyResolver.Core" Version="5.5.1" />
-    <PackageReference Include="Unity.Mvc5" Version="1.4.0" />
   </ItemGroup>
 
 </Project>

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.1082
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.36
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckoutPromotion", "CheckoutPromotion\CheckoutPromotion.csproj", "{798F91A5-9FC5-45AA-BDAC-B799C7EF8B37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CheckoutPromotion", "CheckoutPromotion\CheckoutPromotion.csproj", "{798F91A5-9FC5-45AA-BDAC-B799C7EF8B37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "NUnitTestProject1\UnitTest.csproj", "{3ACF6E24-35BB-4546-BB8D-5AC99798DDAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTest", "NUnitTestProject1\UnitTest.csproj", "{3ACF6E24-35BB-4546-BB8D-5AC99798DDAB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E171ED34-F5E6-4498-BE47-387E5A7D2544}"
 EndProject

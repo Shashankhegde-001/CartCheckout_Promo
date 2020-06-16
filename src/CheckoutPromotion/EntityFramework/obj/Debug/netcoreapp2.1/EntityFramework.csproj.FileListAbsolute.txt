@@ -1,0 +1,11 @@
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\bin\Debug\netcoreapp2.1\EntityFramework.deps.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\bin\Debug\netcoreapp2.1\EntityFramework.runtimeconfig.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\bin\Debug\netcoreapp2.1\EntityFramework.runtimeconfig.dev.json
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\bin\Debug\netcoreapp2.1\EntityFramework.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\obj\Debug\netcoreapp2.1\EntityFramework.csprojAssemblyReference.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\obj\Debug\netcoreapp2.1\EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\obj\Debug\netcoreapp2.1\EntityFramework.AssemblyInfoInputs.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\obj\Debug\netcoreapp2.1\EntityFramework.AssemblyInfo.cs
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\bin\Debug\netcoreapp2.1\EntityFramework.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\obj\Debug\netcoreapp2.1\EntityFramework.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\EntityFramework\obj\Debug\netcoreapp2.1\EntityFramework.pdb

@@ -5,66 +5,73 @@ using Microsoft.Extensions.Logging;
 //using Microsoft.Practices.Unity;
 using System;
 using System.Collections.Generic;
-using System.Web.Mvc;
-using Unity;
-using Unity.Mvc5;
+using System.Linq;
 
 namespace CheckoutPromotion
 {
     public class Program
     {
         private static IServiceProvider _serviceProvider;
+        public static List<Product> products = new List<Product>();
+        public static List<Promo> _promotions = new List<Promo>();
+        public static List<Order> _orders = new List<Order>();
         static void Main(string[] args)
         {
             RegisterServices();
-            CatalogMaintainance catalog = new CatalogMaintainance(_serviceProvider.GetService<ICart>());
+          
+            ICart cart = _serviceProvider.GetService<ICart>();
             var log = _serviceProvider.GetService<ILogger>();
-            //Add Promotions
-            PromotionMaintainance promo = new PromotionMaintainance(_serviceProvider.GetService<IPromotion>());
-            CreatePromotions(promo);
-            var promotions = promo.GetActivePromotions();
-         
+
             //Declare Products
-            DeclareProducts(catalog);
+            DeclareProducts();
 
-            //Checkout the scenarios, consider quantity cannot be zero for checkout
-            Dictionary<string, int> orderList;
+            //Add Promotions
+            CreatePromotions();
+         
+            UpdateProductForCoupon();
 
-            //Scenario A
-            Console.WriteLine("Scenario A");
-            orderList = new Dictionary<string, int>();
-            orderList.Add("A", 1);
-            orderList.Add("B", 1);
-            orderList.Add("C", 1);
-            catalog.UpdateCart(orderList);
-            var checkout1 = catalog.Checkout(catalog.GetCartItems(), promotions,catalog.GetProducts());
-            Console.WriteLine("checkout1: " + checkout1);
-            //Scenario B
-            Console.WriteLine("Scenario B");
-            orderList = new Dictionary<string, int>();
-            orderList.Add("A", 5);
-            orderList.Add("B", 5);
-            orderList.Add("C", 1);
-            catalog.UpdateCart(orderList);
-            var checkout2= catalog.Checkout(catalog.GetCartItems(), promotions, catalog.GetProducts());
-            Console.WriteLine("checkout2: " + checkout2);
-            //Scenario C
-            Console.WriteLine("Scenario C");
-            orderList = new Dictionary<string, int>();
-            orderList.Add("A", 3);
-            orderList.Add("B", 5);
-            orderList.Add("C", 1);
-            orderList.Add("D", 1);
-            catalog.UpdateCart(orderList);
-            var checkout3 = catalog.Checkout(catalog.GetCartItems(), promotions, catalog.GetProducts());
-            Console.WriteLine("checkout3: " + checkout3);
+            //Make order
+            PrepareOrders();
+            cart.AddOrdersToCart(_orders);
+
+            Console.WriteLine("Proceed to checkout? y/n");
+            if ("y" == Console.ReadLine().ToLower())
+            {
+                cart.Checkout();
+            }
 
             DisposeServices();
             Console.ReadLine();
         }
 
-        private static void DeclareProducts(CatalogMaintainance catalog)
+        private static void UpdateProductForCoupon()
         {
+            products[0].Coupon = _promotions[0];
+            products[1].Coupon = _promotions[1];
+            products[2].Coupon = _promotions[2];
+            products[3].Coupon = _promotions[2];
+        }
+        private static void PrepareOrders()
+        {
+            Console.WriteLine("Enter number of orders");
+            int numberOfOrders = Convert.ToInt32(Console.ReadLine());
+            for (int i=1;i<=numberOfOrders;i++)
+            {
+                Console.WriteLine("Enter Product Name");
+                string productName = Convert.ToString(Console.ReadLine());
+
+                Console.WriteLine("Enter Product quantity");
+                int quantity = Convert.ToInt32(Console.ReadLine());
+                _orders.Add(new Order
+                {
+                    CatalogItem = products.Find(x=> x.Name== productName),
+                    Quantity = quantity
+                });
+            }            
+        }
+        private static void DeclareProducts()
+        {
+            #region ststic code
             Product product_A = new Product();
             product_A.Name = "A";
             product_A.Price = 50.0;
@@ -81,31 +88,127 @@ namespace CheckoutPromotion
             product_D.Name = "D";
             product_D.Price = 15.0;
             //Add available items to catalog
-            catalog.UpdateCatalog(product_A);
-            catalog.UpdateCatalog(product_B);
-            catalog.UpdateCatalog(product_C);
-            catalog.UpdateCatalog(product_D);
+            products.Add(product_A);
+            products.Add(product_B);
+            products.Add(product_C);
+            products.Add(product_D);
+            #endregion
+            ////Add products
+            //Console.WriteLine("Enter number of Products to be added to Shopping Cart");
+            //int numberOfOrders = Convert.ToInt32(Console.ReadLine());
+            //for (int i = 1; i <= numberOfOrders; i++)
+            //{
+            //    Console.WriteLine("Enter Product Name");
+            //    string productName = Convert.ToString(Console.ReadLine());
+
+            //    Console.WriteLine("Enter Product Price");
+            //    double price = Convert.ToDouble(Console.ReadLine());
+            //    products.Add(new Product { Name = productName, Price = price });                
+            //}
         }
 
-        private static void CreatePromotions(PromotionMaintainance promo)
+        private static void CreatePromotions()
         {
-            List<string> combo = new List<string>();
-            combo.Add("C");
-            combo.Add("D");
+            #region ststic_code
+            _promotions.Add(
+             new Promo
+             {
+                 PromoCode = Promocodes.PromoCodeSingleFixed,
+                 ProductName = new List<string> { "A" },
+                 Quantity = 3,
+                 DiscountPrice = 130
+             });
 
-            promo.AddPromotion("A", 3, 130);
-            promo.AddPromotion("B", 2, 45);
-            promo.AddPromotion("C", 1, 20);
-            promo.AddPromotion("D", 1, 15);
-            promo.AddPromotionCombo(combo, 1, 30);
+            _promotions.Add(
+             new Promo
+             {
+                 PromoCode = Promocodes.PromoCodeSingleFixed,
+                 ProductName = new List<string> { "B" },
+                 Quantity = 2,
+                 DiscountPrice = 45
+             });
+            _promotions.Add(
+           new Promo
+           {
+               PromoCode = Promocodes.PromoCodeCombo,
+               ProductName = new List<string> { "C", "D" },
+               Quantity = 1,
+               ComboDiscount = 30
+           });
+            _promotions.Add(
+           new Promo
+           {
+               PromoCode = Promocodes.PromoCodeSingleFixed,
+               ProductName = new List<string> { "C" },
+               Quantity = 5,
+               DiscountPrice = 80
+           });
+            #endregion
+            //Create Promotions
+            List<string> availablePromotions = new List<string>();
+            availablePromotions.Add(Promocodes.PromoCodeSingleFixed);
+            availablePromotions.Add(Promocodes.PromoCodeCombo);
+
+            Console.WriteLine("Available promotions\n");
+            foreach (string p in availablePromotions)
+            {
+                int i = 1;
+                Console.WriteLine(i+". "+p + "\n");
+                i++;
+            }
+
+            //Console.WriteLine("Do you want to apply promo? Y/N");
+            //string applyPromo = Console.ReadLine();
+            //if(applyPromo.ToLower()=="y")
+            //do
+            //{
+            //        Console.WriteLine("Enter promo type, 1 for Single fixed, 2 for combo\n");
+            //        int pc = Convert.ToInt32(Console.ReadLine());
+            //        List<string> _products = new List<string>();
+            //        string _promocode = "";
+            //        int _quantity = 0;
+            //        double _discount = 0.0;
+            //        if(pc==1)
+            //        {
+            //            Console.WriteLine("Enter Product Name\n");
+            //            _products.Add(Console.ReadLine());
+            //            _promocode = Promocodes.PromoCodeSingleFixed;
+            //        }
+            //        if(pc==2)
+            //        {
+            //            Console.WriteLine("Enter Products Name seperated by coma\n");
+            //            _products.AddRange(Console.ReadLine().Split(',').ToList());
+            //            _promocode = Promocodes.PromoCodeCombo;
+            //        }
+            //        Console.WriteLine("Enter Quantity\n");
+            //        _quantity = Convert.ToInt32(Console.ReadLine());
+
+            //        Console.WriteLine("Enter Discount\n");
+            //        _discount = Convert.ToDouble(Console.ReadLine());
+            //        Promo _promo =    new Promo
+            //                          {
+            //                              PromoCode = _promocode,
+            //                              ProductName = _products,
+            //                              Quantity = _quantity,
+            //                              DiscountPrice = _discount
+            //                          };
+
+            //        //Associate promo code to product
+            //        foreach(string name in _products)
+            //        {
+            //            products.Find(x => x.Name == name).Coupon = _promo;
+            //        }
+            //        Console.WriteLine("Do you want to apply promo? Y/N");
+            //     applyPromo = Console.ReadLine();
+
+            //}while(applyPromo.ToLower() == "y");
         }
         private static void RegisterServices()
         {
             var collection = new ServiceCollection();
             var builder = new ContainerBuilder();
-            builder.RegisterType<Promotions>().As<IPromotion>();
+            builder.RegisterType<PromotionFactory>().As<IPromotionFactory>();
             builder.RegisterType<Cart>().As<ICart>();
-            builder.RegisterType<LogHelper>().As<ILogger>();
             builder.Populate(collection);
             var appContainer = builder.Build();
             _serviceProvider = new AutofacServiceProvider(appContainer);

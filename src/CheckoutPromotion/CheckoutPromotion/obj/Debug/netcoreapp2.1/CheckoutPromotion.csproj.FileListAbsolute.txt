@@ -9,3 +9,4 @@ C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\Ch
 C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\bin\Debug\netcoreapp2.1\CheckoutPromotion.pdb
 C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.dll
 C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\CheckoutPromotion\obj\Debug\netcoreapp2.1\CheckoutPromotion.genruntimeconfig.cache

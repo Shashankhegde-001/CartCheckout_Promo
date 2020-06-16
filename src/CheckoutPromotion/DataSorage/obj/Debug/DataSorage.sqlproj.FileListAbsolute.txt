@@ -1,0 +1,10 @@
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\bin\Debug\DataSorage.dacpac
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\bin\Debug\DataSorage.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\bin\Debug\DataSorage.pdb
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\DataSorage.sqlprojAssemblyReference.cache
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\Model.xml
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\refactor.xml
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\postdeploy.sql
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\predeploy.sql
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\DataSorage.dll
+C:\Users\shashanka.hegde\CodePractice\CheckoutPromotion\src\CheckoutPromotion\DataSorage\obj\Debug\DataSorage.pdb
